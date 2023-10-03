@@ -10,6 +10,8 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
+using JwtRegisteredClaimNames = Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames;
+
 namespace Capstone.API.Controllers
 {
     [Route("api/authentication")]
@@ -38,13 +40,10 @@ namespace Capstone.API.Controllers
         }
 
         [HttpPost("token")]
-        public async Task<IActionResult> LoginInternal(LoginRequest request)
+        public async Task<LoginResponse> LoginInternal(LoginRequest request)
         {
             var user = await _usersService.LoginUser(request.UserName, request.Password);
-            if (user == null)
-            {
-                return NotFound();
-            }
+           
             var claims = new Claim[]
             {
                 new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString()),
@@ -66,7 +65,13 @@ namespace Capstone.API.Controllers
 
             var tokenString = new JwtSecurityTokenHandler().WriteToken(token);
 
-            return Ok(tokenString);
+            return new LoginResponse
+            {
+                IsAdmin = user.IsAdmin,
+                UserId = user.UserId,
+                UserName = user.UserName,
+                Token = tokenString,
+            };
         }
 
         [HttpGet("current-user")]
