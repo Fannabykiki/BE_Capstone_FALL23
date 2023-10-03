@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Capstone.DataAccess.Migrations
 {
     [DbContext(typeof(CapstoneContext))]
-    [Migration("20231001095146_UpdateAttachmentConstrain")]
-    partial class UpdateAttachmentConstrain
+    [Migration("20231003141537_UpdateUserVer2Migration")]
+    partial class UpdateUserVer2Migration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -284,9 +284,6 @@ namespace Capstone.DataAccess.Migrations
                     b.Property<Guid>("AssignTo")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("AttachmentId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<Guid>("BoardId")
                         .HasColumnType("uniqueidentifier");
 
@@ -305,9 +302,6 @@ namespace Capstone.DataAccess.Migrations
                     b.Property<DateTime>("DueDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("HistoryId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<Guid>("PrevId")
                         .HasColumnType("uniqueidentifier");
 
@@ -320,12 +314,12 @@ namespace Capstone.DataAccess.Migrations
                     b.Property<int>("TicketStatus")
                         .HasColumnType("int");
 
+                    b.Property<int>("TicketType")
+                        .HasColumnType("int");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid>("TypeId")
-                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
@@ -444,6 +438,9 @@ namespace Capstone.DataAccess.Migrations
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("Address")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Avatar")
                         .HasColumnType("nvarchar(max)");
 
@@ -465,8 +462,17 @@ namespace Capstone.DataAccess.Migrations
                     b.Property<string>("Password")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RefreshToken")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Status")
                         .HasColumnType("int");
+
+                    b.Property<string>("Token")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UserName")
                         .HasColumnType("nvarchar(max)");
