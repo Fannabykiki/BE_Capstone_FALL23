@@ -1,10 +1,13 @@
-﻿namespace Capstone.DataAccess.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Capstone.DataAccess.Entities
 {
     public class PriorityLevel
     {
+        [Key]
         public Guid LevelId { get; set; }
         public int Level { get; set; }
         public string Title { get; set; }
-        public List<Task> Tasks { get; set; }
+        public List<Ticket> Tickets { get; set; }
     }
 }

@@ -9,7 +9,7 @@ namespace Capstone.Common.Enums
     public enum UserRoleEnum
     {
         Admin = 0,
-        User = 1,
+        Member = 1,
     }
     public class UserRoles
     {
