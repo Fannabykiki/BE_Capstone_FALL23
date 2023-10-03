@@ -224,19 +224,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\phanl\\.nuget\\packages\\": {}
+    "C:\\Users\\Cuong\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FULearning\\FALL2023\\Capstone\\BE_Capstone_FALL23\\Capstone.API\\Capstone.API.csproj",
+      "projectUniqueName": "C:\\Users\\Cuong\\OneDrive - codingclass.edu.vn\\Desktop\\BE_DevTasker\\Capstone.API\\Capstone.API.csproj",
       "projectName": "Capstone.API",
-      "projectPath": "D:\\FULearning\\FALL2023\\Capstone\\BE_Capstone_FALL23\\Capstone.API\\Capstone.API.csproj",
-      "packagesPath": "C:\\Users\\phanl\\.nuget\\packages\\",
-      "outputPath": "D:\\FULearning\\FALL2023\\Capstone\\BE_Capstone_FALL23\\Capstone.API\\obj\\",
+      "projectPath": "C:\\Users\\Cuong\\OneDrive - codingclass.edu.vn\\Desktop\\BE_DevTasker\\Capstone.API\\Capstone.API.csproj",
+      "packagesPath": "C:\\Users\\Cuong\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Cuong\\OneDrive - codingclass.edu.vn\\Desktop\\BE_DevTasker\\Capstone.API\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\phanl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Cuong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
