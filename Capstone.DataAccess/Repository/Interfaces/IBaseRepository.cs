@@ -12,5 +12,6 @@ namespace Capstone.DataAccess.Repository.Interfaces
         Task<T> UpdateAsync(T entity);
         Task<bool> DeleteAsync(T entity);
         int SaveChanges();
+        IDatabaseTransaction DatabaseTransaction();
     }
 }

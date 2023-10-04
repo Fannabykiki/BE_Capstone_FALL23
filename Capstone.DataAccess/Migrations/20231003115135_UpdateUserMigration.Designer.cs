@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Capstone.DataAccess.Migrations
 {
     [DbContext(typeof(CapstoneContext))]
-    [Migration("20231001094440_CreateEntityMigration")]
-    partial class CreateEntityMigration
+    [Migration("20231003115135_UpdateUserMigration")]
+    partial class UpdateUserMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -27,6 +27,7 @@ namespace Capstone.DataAccess.Migrations
             modelBuilder.Entity("Capstone.DataAccess.Entities.Attachment", b =>
                 {
                     b.Property<Guid>("AttachmentId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid?>("CommentId")
@@ -41,18 +42,20 @@ namespace Capstone.DataAccess.Migrations
                     b.Property<DateTime?>("DeleteAt")
                         .HasColumnType("datetime2");
 
+                    b.Property<Guid>("TicketId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid>("WorkItemId")
-                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("AttachmentId");
 
                     b.HasIndex("CommentId");
 
                     b.HasIndex("CreateBy");
+
+                    b.HasIndex("TicketId");
 
                     b.ToTable("Attachments");
                 });
@@ -281,9 +284,6 @@ namespace Capstone.DataAccess.Migrations
                     b.Property<Guid>("AssignTo")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("AttachmentId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<Guid>("BoardId")
                         .HasColumnType("uniqueidentifier");
 
@@ -302,9 +302,6 @@ namespace Capstone.DataAccess.Migrations
                     b.Property<DateTime>("DueDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("HistoryId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<Guid>("PrevId")
                         .HasColumnType("uniqueidentifier");
 
@@ -317,12 +314,12 @@ namespace Capstone.DataAccess.Migrations
                     b.Property<int>("TicketStatus")
                         .HasColumnType("int");
 
+                    b.Property<int>("TicketType")
+                        .HasColumnType("int");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid>("TypeId")
-                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
@@ -462,8 +459,14 @@ namespace Capstone.DataAccess.Migrations
                     b.Property<string>("Password")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("RefreshToken")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Status")
                         .HasColumnType("int");
+
+                    b.Property<string>("Token")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UserName")
                         .HasColumnType("nvarchar(max)");
@@ -490,12 +493,6 @@ namespace Capstone.DataAccess.Migrations
 
             modelBuilder.Entity("Capstone.DataAccess.Entities.Attachment", b =>
                 {
-                    b.HasOne("Capstone.DataAccess.Entities.Ticket", "Ticket")
-                        .WithMany("Attachments")
-                        .HasForeignKey("AttachmentId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
                     b.HasOne("Capstone.DataAccess.Entities.TicketComment", "TaskComment")
                         .WithMany("Attachments")
                         .HasForeignKey("CommentId");
@@ -504,6 +501,12 @@ namespace Capstone.DataAccess.Migrations
                         .WithMany("Attachments")
                         .HasForeignKey("CreateBy")
                         .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Capstone.DataAccess.Entities.Ticket", "Ticket")
+                        .WithMany("Attachments")
+                        .HasForeignKey("TicketId")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("TaskComment");
