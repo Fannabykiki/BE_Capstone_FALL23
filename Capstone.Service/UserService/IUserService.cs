@@ -1,4 +1,5 @@
 ﻿using Capstone.Common.DTOs.User;
+using Capstone.Common.Token;
 using Capstone.DataAccess.Entities;
 
 namespace Capstone.Service.UserService
@@ -11,5 +12,7 @@ namespace Capstone.Service.UserService
         Task<bool> DeleteAsync(Guid id);
         Task<CreateUserResponse> UpdateUserAsync(UpdateUserRequest updateUserRequest, Guid id);
         Task<CreateUserResponse> CreateAsync(CreateUserRequest createUserRequest);
-    }
+		Task SetRefreshToken(RefreshToken newRefreshToken);
+		Task<RefreshToken> GenerateRefreshToken();
+	}
 }
