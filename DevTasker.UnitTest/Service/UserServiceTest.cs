@@ -34,8 +34,8 @@ namespace DevTasker.UnitTest.Service
         public async Task TestLoginUserAsync()
         {
             // Arrange
-            var username = "admin";
-            var password = "1";
+            var username = "testuser";
+            var password = "testpassword";
 
             byte[] passwordSalt = new byte[16];
             using (var rng = new RNGCryptoServiceProvider())
@@ -119,5 +119,33 @@ namespace DevTasker.UnitTest.Service
             }
             Assert.Null(result);
         }
+
+        [Test]
+        public async Task TestLoginUserAsync_UsernameNotFound()
+        {
+            // Arrange
+            var username = "nonexistentuser";
+            var password = "testpassword";
+
+            // Giả lập không có người dùng cùng tên tồn tại
+            _userRepositoryMock.Setup(repo => repo.GetAsync(It.IsAny<Expression<Func<User, bool>>>(), null))
+                .ReturnsAsync((User)null);
+
+            // Act
+            var result = await _userService.LoginUser(username, password);
+
+            // Assert
+            if (result != null)
+            {
+                Console.WriteLine("Success: Login was successful.");
+            }
+            else
+            {
+                Console.WriteLine("Wrong: Username not found.");
+            }
+            Assert.Null(result);
+        }
+
+
     }
 }
