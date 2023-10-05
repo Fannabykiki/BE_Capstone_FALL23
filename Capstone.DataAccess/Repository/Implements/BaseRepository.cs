@@ -72,6 +72,10 @@ namespace Capstone.DataAccess.Repository.Implements
 
             return result.AsQueryable();
         }
+        public IDatabaseTransaction DatabaseTransaction()
+        {
+            return new EntityDatabaseTransaction(_context);
+        }
 
         public async Task<IEnumerable<T>> GetAllWithOdata(Expression<Func<T, bool>>? predicate, Expression<Func<T, object>>? pre)
         {

@@ -238,13 +238,11 @@ namespace Capstone.DataAccess.Migrations
                     DeleteTime = table.Column<DateTime>(type: "datetime2", nullable: true),
                     AssignTo = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     CreateBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    TypeId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    TicketType = table.Column<int>(type: "int", nullable: false),
                     PriorityId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    HistoryId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     PrevId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     TicketStatus = table.Column<int>(type: "int", nullable: false),
                     BoardId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    AttachmentId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
@@ -343,7 +341,7 @@ namespace Capstone.DataAccess.Migrations
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CreateAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     DeleteAt = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    WorkItemId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    TicketId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     CommentId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     CreateBy = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
@@ -356,11 +354,11 @@ namespace Capstone.DataAccess.Migrations
                         principalTable: "TicketComments",
                         principalColumn: "CommentId");
                     table.ForeignKey(
-                        name: "FK_Attachments_Tickets_AttachmentId",
-                        column: x => x.AttachmentId,
+                        name: "FK_Attachments_Tickets_TicketId",
+                        column: x => x.TicketId,
                         principalTable: "Tickets",
                         principalColumn: "TicketId",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Attachments_Users_CreateBy",
                         column: x => x.CreateBy,
@@ -402,6 +400,11 @@ namespace Capstone.DataAccess.Migrations
                 name: "IX_Attachments_CreateBy",
                 table: "Attachments",
                 column: "CreateBy");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Attachments_TicketId",
+                table: "Attachments",
+                column: "TicketId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Notifications_RecerverId",

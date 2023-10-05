@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Capstone.DataAccess.Migrations
 {
     [DbContext(typeof(CapstoneContext))]
-    [Migration("20231001101343_UpdateField")]
-    partial class UpdateField
+    [Migration("20231003073815_CreateEntityMigration")]
+    partial class CreateEntityMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

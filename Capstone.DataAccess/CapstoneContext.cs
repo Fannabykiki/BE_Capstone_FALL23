@@ -56,8 +56,8 @@ namespace Capstone.DataAccess
 
             modelBuilder.Entity<ProjectMember>()
                        .HasOne(sc => sc.Users)
-                       .WithOne(s => s.ProjectMember)
-                       .HasForeignKey<User>(sc => sc.UserId)
+                       .WithMany(s => s.ProjectMember)
+                       .HasForeignKey(sc => sc.UserId)
                        .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<ProjectMember>()
@@ -112,9 +112,8 @@ namespace Capstone.DataAccess
                        .HasOne(sc => sc.Project)
                        .WithOne(s => s.Board)
                        .HasForeignKey<Project>(sc => sc.BoardId);
-
-           
         }
+
         public DbSet<Attachment>? Attachments { get; set; }
         public DbSet<Board>? Boards { get; set; }
         public DbSet<Notification>? Notifications { get; set; }

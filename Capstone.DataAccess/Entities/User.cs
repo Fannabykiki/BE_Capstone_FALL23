@@ -10,7 +10,11 @@ namespace Capstone.DataAccess.Entities
         public string? UserName { get; set; }
         public string? Password { get; set; }
         public string? Email { get; set; }
+        public string? Address { get; set; }
+        public string? PhoneNumber { get; set; }
         public string? Avatar { get; set; }
+        public string? Token { get; set; }
+        public string? RefreshToken { get; set; }
         public GenderEnum Gender { get; set; } //Male = 0,  Female = 1, Other = 2
         public DateTime JoinedDate { get; set; }
         public bool IsFirstTime { get; set; } //true
@@ -20,6 +24,6 @@ namespace Capstone.DataAccess.Entities
         public List<Attachment> Attachments { get; set; } // 1 user can upload many attachment is task
         public List<Ticket> Tickets { get; set; } //1 user can assign many task
         public List<Notification> Notifications { get; set; } // 1 user has many noti
-        public ProjectMember ProjectMember { get; set; } // 1 user is many porject_member in other project
+        public List<ProjectMember> ProjectMember { get; set; } // 1 user is many porject_member in other project
     }
 }

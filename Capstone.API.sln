@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capstone.DataAccess", "Caps
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Capstone.Common", "Capstone.Common\Capstone.Common.csproj", "{D6DE24AB-7AE1-4C4C-92EF-2F6DDFC0D259}"
 EndProject
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevTasker.UnitTest", "DevTasker.UnitTest\DevTasker.UnitTest.csproj", "{09BEA1D1-0F5B-4A18-9B2F-5839E8C8D491}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capstone.Service", "Capstone.Service\Capstone.Service.csproj", "{65B1AA71-068F-4989-AB01-113DAEC55C42}"
+>>>>>>> origin/Test_environment
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +33,17 @@ Global
 		{D6DE24AB-7AE1-4C4C-92EF-2F6DDFC0D259}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6DE24AB-7AE1-4C4C-92EF-2F6DDFC0D259}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6DE24AB-7AE1-4C4C-92EF-2F6DDFC0D259}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{09BEA1D1-0F5B-4A18-9B2F-5839E8C8D491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{09BEA1D1-0F5B-4A18-9B2F-5839E8C8D491}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09BEA1D1-0F5B-4A18-9B2F-5839E8C8D491}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09BEA1D1-0F5B-4A18-9B2F-5839E8C8D491}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{65B1AA71-068F-4989-AB01-113DAEC55C42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65B1AA71-068F-4989-AB01-113DAEC55C42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65B1AA71-068F-4989-AB01-113DAEC55C42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65B1AA71-068F-4989-AB01-113DAEC55C42}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> origin/Test_environment
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
