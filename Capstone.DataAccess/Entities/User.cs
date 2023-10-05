@@ -16,6 +16,8 @@ namespace Capstone.DataAccess.Entities
         public string? Avatar { get; set; }
         public string? Token { get; set; }
         public string? RefreshToken { get; set; }
+        public DateTime? TokenCreated { get; set; }
+        public DateTime? TokenExpires { get; set; }
         public GenderEnum Gender { get; set; } //Male = 0,  Female = 1, Other = 2
         public DateTime JoinedDate { get; set; }
         public bool IsFirstTime { get; set; } //true

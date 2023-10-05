@@ -68,6 +68,9 @@ namespace Capstone.API.Controllers
 
             var tokenString = new JwtSecurityTokenHandler().WriteToken(token);
 
+            var refreshToken = await _usersService.GenerateRefreshToken();
+            await _usersService.SetFreshToken(refreshToken);
+
             return new LoginResponse
             {
                 IsAdmin = user.IsAdmin,

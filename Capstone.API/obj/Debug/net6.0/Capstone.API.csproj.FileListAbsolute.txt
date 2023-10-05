@@ -89,3 +89,4 @@ D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.API\bin\Debug\net6.0
 D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.API\bin\Debug\net6.0\Capstone.Common.pdb
 D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.API\bin\Debug\net6.0\Capstone.Service.pdb
 D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.API\bin\Debug\net6.0\Capstone.DataAccess.pdb
+D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.API\obj\Debug\net6.0\Capstone.API.MvcApplicationPartsAssemblyInfo.cs

@@ -1,7 +1,9 @@
 ﻿using Capstone.Common.DTOs.User;
+using Capstone.Common.Token;
 using Capstone.DataAccess;
 using Capstone.DataAccess.Entities;
 using Capstone.DataAccess.Repository.Interfaces;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
 
@@ -52,7 +54,10 @@ namespace Capstone.Service.UserService
                         IsSucced = true,
                     };
                 }
-                return null;
+                else
+                {
+                    return null;
+                }
             }
             catch (Exception)
             {
@@ -131,6 +136,26 @@ namespace Capstone.Service.UserService
                 }
             }
             return null;
+        }
+
+        public async Task<RefreshToken> GenerateRefreshToken()
+        {
+            var refreshToken = new RefreshToken()
+            {
+                Token = Convert.ToBase64String(RandomNumberGenerator.GetBytes(64)),
+                Expires = DateTime.UtcNow.AddDays(5),
+                Created = DateTime.UtcNow
+            };
+            return refreshToken;
+        }
+
+        public async Task SetRefreshToken(RefreshToken newRefreshToken)
+        {
+            var cookieOptions = new CookieOptions
+            {
+                HttpOnly = true,
+                Expires = newRefreshToken.Expires,
+            };
         }
     }
 }
