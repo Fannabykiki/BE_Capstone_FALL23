@@ -19,7 +19,7 @@ builder.Services.AddSingleton<ILoggerManager, LoggerManager>();
 builder.Services.AddControllers();
 builder.Services.AddCors(p => p.AddPolicy("corspolicy", build =>
 {
-    build.WithOrigins().AllowAnyMethod().AllowAnyHeader();
+    build.WithOrigins("http://localhost:port").AllowAnyMethod().AllowAnyHeader();
 }));
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(
            options =>
