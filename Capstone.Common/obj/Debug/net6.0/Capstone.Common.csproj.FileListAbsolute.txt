@@ -22,3 +22,15 @@ D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.Common\obj\Debug\net
 D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.Common\obj\Debug\net6.0\refint\Capstone.Common.dll
 D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.Common\obj\Debug\net6.0\Capstone.Common.pdb
 D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.Common\obj\Debug\net6.0\ref\Capstone.Common.dll
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.Common\bin\Debug\net6.0\Capstone.Common.deps.json
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.Common\bin\Debug\net6.0\Capstone.Common.dll
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.Common\bin\Debug\net6.0\Capstone.Common.pdb
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.Common\obj\Debug\net6.0\Capstone.Common.csproj.AssemblyReference.cache
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.Common\obj\Debug\net6.0\Capstone.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.Common\obj\Debug\net6.0\Capstone.Common.AssemblyInfoInputs.cache
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.Common\obj\Debug\net6.0\Capstone.Common.AssemblyInfo.cs
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.Common\obj\Debug\net6.0\Capstone.Common.csproj.CoreCompileInputs.cache
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.Common\obj\Debug\net6.0\Capstone.Common.dll
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.Common\obj\Debug\net6.0\refint\Capstone.Common.dll
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.Common\obj\Debug\net6.0\Capstone.Common.pdb
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.Common\obj\Debug\net6.0\ref\Capstone.Common.dll
