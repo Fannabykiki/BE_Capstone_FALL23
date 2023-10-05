@@ -22,7 +22,7 @@ namespace Capstone.API.Extentions
                         await context.Response.WriteAsync(new ErrorDetail()
                         {
                             StatusCode = context.Response.StatusCode,
-                            Message = "Internal Server Error."
+                            Message = contextFeature.Error.Message,
                         }.ToString());
                     }
                 });

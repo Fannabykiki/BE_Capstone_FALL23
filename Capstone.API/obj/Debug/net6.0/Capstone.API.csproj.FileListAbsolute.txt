@@ -14,7 +14,6 @@ D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.API\obj\Debug\net6.0
 D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.API\obj\Debug\net6.0\Capstone.API.AssemblyInfoInputs.cache
 D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.API\obj\Debug\net6.0\Capstone.API.AssemblyInfo.cs
 D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.API\obj\Debug\net6.0\Capstone.API.csproj.CoreCompileInputs.cache
-D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.API\obj\Debug\net6.0\Capstone.API.MvcApplicationPartsAssemblyInfo.cs
 D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.API\obj\Debug\net6.0\Capstone.API.MvcApplicationPartsAssemblyInfo.cache
 D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.API\obj\Debug\net6.0\staticwebassets\msbuild.Capstone.API.Microsoft.AspNetCore.StaticWebAssets.props
 D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.API\obj\Debug\net6.0\staticwebassets\msbuild.build.Capstone.API.props
@@ -30,7 +29,6 @@ D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.API\obj\Debug\net6.0
 D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.API\obj\Debug\net6.0\Capstone.API.pdb
 D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.API\obj\Debug\net6.0\Capstone.API.genruntimeconfig.cache
 D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.API\obj\Debug\net6.0\ref\Capstone.API.dll
-D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.API\bin\Debug\net6.0\web.config
 D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.API\bin\Debug\net6.0\AutoMapper.dll
 D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.API\bin\Debug\net6.0\FluentValidation.dll
 D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
@@ -93,7 +91,6 @@ D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.API\bin\Debug\net6.0
 D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.API\bin\Debug\net6.0\Capstone.DataAccess.pdb
 C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.API\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.API\bin\Debug\net6.0\appsettings.json
-C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.API\bin\Debug\net6.0\web.config
 C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.API\bin\Debug\net6.0\Capstone.API.exe
 C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.API\bin\Debug\net6.0\Capstone.API.deps.json
 C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.API\bin\Debug\net6.0\Capstone.API.runtimeconfig.json
