@@ -93,6 +93,24 @@ namespace Capstone.Service.UserService
                 UserName = user.UserName,
             };
         }
+        public async Task<User> GetUserByEmailAsync(string email)
+        {
+            var user = await _userRepository.GetAsync(user => user.Email == email, null);
+
+            if (user == null ||  String.IsNullOrEmpty(email)) return null;
+
+            return new User
+            {
+                UserId = user.UserId,
+                Email = user.Email,
+                Gender = user.Gender,
+                Avatar = user.Avatar,
+                JoinedDate = user.JoinedDate,
+                Status = user.Status,
+                IsAdmin = user.IsAdmin,
+                UserName = user.UserName,
+            };
+        }
         private void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
         {
             using (var hmac = new HMACSHA512())
@@ -132,5 +150,6 @@ namespace Capstone.Service.UserService
             }
             return null;
         }
+        
     }
 }

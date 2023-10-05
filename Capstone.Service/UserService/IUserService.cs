@@ -7,6 +7,7 @@ namespace Capstone.Service.UserService
     {
         Task<User> LoginUser(string username, string password);
         Task<User> GetUserByIdAsync(Guid Id);
+        Task<User> GetUserByEmailAsync(string email);
         Task<IEnumerable<User>> GetAllUserAsync();
         Task<bool> DeleteAsync(Guid id);
         Task<CreateUserResponse> UpdateUserAsync(UpdateUserRequest updateUserRequest, Guid id);

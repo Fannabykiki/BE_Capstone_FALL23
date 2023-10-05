@@ -49,3 +49,20 @@ C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.DataA
 C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.DataAccess\obj\Debug\net6.0\Capstone.DataAccess.pdb
 C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.DataAccess\obj\Debug\net6.0\Capstone.DataAccess.genruntimeconfig.cache
 C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.DataAccess\obj\Debug\net6.0\ref\Capstone.DataAccess.dll
+D:\Study\Fall23\Capstone\BE_base\Capstone.DataAccess\bin\Debug\net6.0\Capstone.DataAccess.deps.json
+D:\Study\Fall23\Capstone\BE_base\Capstone.DataAccess\bin\Debug\net6.0\Capstone.DataAccess.runtimeconfig.json
+D:\Study\Fall23\Capstone\BE_base\Capstone.DataAccess\bin\Debug\net6.0\Capstone.DataAccess.dll
+D:\Study\Fall23\Capstone\BE_base\Capstone.DataAccess\bin\Debug\net6.0\Capstone.DataAccess.pdb
+D:\Study\Fall23\Capstone\BE_base\Capstone.DataAccess\bin\Debug\net6.0\Capstone.Common.dll
+D:\Study\Fall23\Capstone\BE_base\Capstone.DataAccess\bin\Debug\net6.0\Capstone.Common.pdb
+D:\Study\Fall23\Capstone\BE_base\Capstone.DataAccess\obj\Debug\net6.0\Capstone.DataAccess.csproj.AssemblyReference.cache
+D:\Study\Fall23\Capstone\BE_base\Capstone.DataAccess\obj\Debug\net6.0\Capstone.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\Fall23\Capstone\BE_base\Capstone.DataAccess\obj\Debug\net6.0\Capstone.DataAccess.AssemblyInfoInputs.cache
+D:\Study\Fall23\Capstone\BE_base\Capstone.DataAccess\obj\Debug\net6.0\Capstone.DataAccess.AssemblyInfo.cs
+D:\Study\Fall23\Capstone\BE_base\Capstone.DataAccess\obj\Debug\net6.0\Capstone.DataAccess.csproj.CoreCompileInputs.cache
+D:\Study\Fall23\Capstone\BE_base\Capstone.DataAccess\obj\Debug\net6.0\Capstone.DataAccess.csproj.CopyComplete
+D:\Study\Fall23\Capstone\BE_base\Capstone.DataAccess\obj\Debug\net6.0\Capstone.DataAccess.dll
+D:\Study\Fall23\Capstone\BE_base\Capstone.DataAccess\obj\Debug\net6.0\refint\Capstone.DataAccess.dll
+D:\Study\Fall23\Capstone\BE_base\Capstone.DataAccess\obj\Debug\net6.0\Capstone.DataAccess.pdb
+D:\Study\Fall23\Capstone\BE_base\Capstone.DataAccess\obj\Debug\net6.0\Capstone.DataAccess.genruntimeconfig.cache
+D:\Study\Fall23\Capstone\BE_base\Capstone.DataAccess\obj\Debug\net6.0\ref\Capstone.DataAccess.dll
