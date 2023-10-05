@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JybiAQwhrC0d9+pO7SZH+QgrPlDZJ+dDYtRkadgLGB1Sdpip4uXASs5XTluvIH/ymwDEYI6aO3yjEpzEX2Kciw==",
+  "dgSpecHash": "MA+5SeFoOUJBySFPtFG+nh3y9vF0ATpf8XQNJFxSMbSBCJLDGP1q3XQM82qritAyGPJJ1SzpHgYb0Kfj8kFw4g==",
   "success": true,
-  "projectFilePath": "D:\\FULearning\\FALL2023\\Capstone\\BE_Capstone_FALL23\\Capstone.API\\Capstone.API.csproj",
+  "projectFilePath": "D:\\FULearning\\FALL2023\\Capstone\\BE_DevTasker\\Capstone.API\\Capstone.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\phanl\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\phanl\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FULearning\\FALL2023\\Capstone\\BE_Capstone_FALL23\\Capstone.DataAccess\\Capstone.DataAccess.csproj": {}
+    "D:\\FULearning\\FALL2023\\Capstone\\BE_DevTasker\\Capstone.DataAccess\\Capstone.DataAccess.csproj": {}
   },
   "projects": {
-    "D:\\FULearning\\FALL2023\\Capstone\\BE_Capstone_FALL23\\Capstone.Common\\Capstone.Common.csproj": {
+    "D:\\FULearning\\FALL2023\\Capstone\\BE_DevTasker\\Capstone.Common\\Capstone.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FULearning\\FALL2023\\Capstone\\BE_Capstone_FALL23\\Capstone.Common\\Capstone.Common.csproj",
+        "projectUniqueName": "D:\\FULearning\\FALL2023\\Capstone\\BE_DevTasker\\Capstone.Common\\Capstone.Common.csproj",
         "projectName": "Capstone.Common",
-        "projectPath": "D:\\FULearning\\FALL2023\\Capstone\\BE_Capstone_FALL23\\Capstone.Common\\Capstone.Common.csproj",
+        "projectPath": "D:\\FULearning\\FALL2023\\Capstone\\BE_DevTasker\\Capstone.Common\\Capstone.Common.csproj",
         "packagesPath": "C:\\Users\\phanl\\.nuget\\packages\\",
-        "outputPath": "D:\\FULearning\\FALL2023\\Capstone\\BE_Capstone_FALL23\\Capstone.Common\\obj\\",
+        "outputPath": "D:\\FULearning\\FALL2023\\Capstone\\BE_DevTasker\\Capstone.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\phanl\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "D:\\FULearning\\FALL2023\\Capstone\\BE_Capstone_FALL23\\Capstone.DataAccess\\Capstone.DataAccess.csproj": {
+    "D:\\FULearning\\FALL2023\\Capstone\\BE_DevTasker\\Capstone.DataAccess\\Capstone.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FULearning\\FALL2023\\Capstone\\BE_Capstone_FALL23\\Capstone.DataAccess\\Capstone.DataAccess.csproj",
+        "projectUniqueName": "D:\\FULearning\\FALL2023\\Capstone\\BE_DevTasker\\Capstone.DataAccess\\Capstone.DataAccess.csproj",
         "projectName": "Capstone.DataAccess",
-        "projectPath": "D:\\FULearning\\FALL2023\\Capstone\\BE_Capstone_FALL23\\Capstone.DataAccess\\Capstone.DataAccess.csproj",
+        "projectPath": "D:\\FULearning\\FALL2023\\Capstone\\BE_DevTasker\\Capstone.DataAccess\\Capstone.DataAccess.csproj",
         "packagesPath": "C:\\Users\\phanl\\.nuget\\packages\\",
-        "outputPath": "D:\\FULearning\\FALL2023\\Capstone\\BE_Capstone_FALL23\\Capstone.DataAccess\\obj\\",
+        "outputPath": "D:\\FULearning\\FALL2023\\Capstone\\BE_DevTasker\\Capstone.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\phanl\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +83,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\FULearning\\FALL2023\\Capstone\\BE_Capstone_FALL23\\Capstone.Common\\Capstone.Common.csproj": {
-                "projectPath": "D:\\FULearning\\FALL2023\\Capstone\\BE_Capstone_FALL23\\Capstone.Common\\Capstone.Common.csproj"
+              "D:\\FULearning\\FALL2023\\Capstone\\BE_DevTasker\\Capstone.Common\\Capstone.Common.csproj": {
+                "projectPath": "D:\\FULearning\\FALL2023\\Capstone\\BE_DevTasker\\Capstone.Common\\Capstone.Common.csproj"
               }
             }
           }

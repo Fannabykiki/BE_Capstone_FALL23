@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CkoCKn//VSnWGnQuac36yJGSl6IDSXJNAI/a0YDKcLIikse0KTaGJch/uU5A/mBQ13ApQXB9dA5kOoB7uTZNLg==",
+  "dgSpecHash": "zw7orUdemITp8GzwuBkwzSuqbgFZX53q+mFoITNdBx6HBnUZsZVl8xPZXLlfxaeWU4R0gdmWEUC9FWIGmARUtg==",
   "success": true,
-  "projectFilePath": "D:\\FULearning\\FALL2023\\Capstone\\BE_Capstone_FALL23\\Capstone.Common\\Capstone.Common.csproj",
+  "projectFilePath": "D:\\FULearning\\FALL2023\\Capstone\\BE_DevTasker\\Capstone.Common\\Capstone.Common.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

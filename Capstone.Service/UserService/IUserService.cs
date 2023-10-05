@@ -13,6 +13,6 @@ namespace Capstone.Service.UserService
         Task<CreateUserResponse> UpdateUserAsync(UpdateUserRequest updateUserRequest, Guid id);
         Task<CreateUserResponse> CreateAsync(CreateUserRequest createUserRequest);
         Task<RefreshToken> GenerateRefreshToken();
-        Task SetRefreshToken(RefreshToken newRefreshToken);
+        Task SetRefreshToken(RefreshToken refreshToken);
     }
 }

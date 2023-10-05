@@ -90,3 +90,13 @@ D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.API\bin\Debug\net6.0
 D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.API\bin\Debug\net6.0\Capstone.Service.pdb
 D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.API\bin\Debug\net6.0\Capstone.DataAccess.pdb
 D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.API\obj\Debug\net6.0\Capstone.API.MvcApplicationPartsAssemblyInfo.cs
+D:\FULearning\FALL2023\Capstone\BE_DevTasker\Capstone.API\obj\Debug\net6.0\Capstone.API.csproj.AssemblyReference.cache
+D:\FULearning\FALL2023\Capstone\BE_DevTasker\Capstone.API\obj\Debug\net6.0\Capstone.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\FULearning\FALL2023\Capstone\BE_DevTasker\Capstone.API\obj\Debug\net6.0\Capstone.API.AssemblyInfoInputs.cache
+D:\FULearning\FALL2023\Capstone\BE_DevTasker\Capstone.API\obj\Debug\net6.0\Capstone.API.AssemblyInfo.cs
+D:\FULearning\FALL2023\Capstone\BE_DevTasker\Capstone.API\obj\Debug\net6.0\Capstone.API.csproj.CoreCompileInputs.cache
+D:\FULearning\FALL2023\Capstone\BE_DevTasker\Capstone.API\obj\Debug\net6.0\Capstone.API.MvcApplicationPartsAssemblyInfo.cs
+D:\FULearning\FALL2023\Capstone\BE_DevTasker\Capstone.API\obj\Debug\net6.0\Capstone.API.MvcApplicationPartsAssemblyInfo.cache
+D:\FULearning\FALL2023\Capstone\BE_DevTasker\Capstone.API\obj\Debug\net6.0\Capstone.API.dll
+D:\FULearning\FALL2023\Capstone\BE_DevTasker\Capstone.API\obj\Debug\net6.0\refint\Capstone.API.dll
+D:\FULearning\FALL2023\Capstone\BE_DevTasker\Capstone.API\obj\Debug\net6.0\Capstone.API.pdb
