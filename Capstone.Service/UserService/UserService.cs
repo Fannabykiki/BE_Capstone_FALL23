@@ -3,6 +3,7 @@ using Capstone.DataAccess;
 using Capstone.DataAccess.Entities;
 using Capstone.DataAccess.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Cryptography;
 
 namespace Capstone.Service.UserService
 {
@@ -22,28 +23,36 @@ namespace Capstone.Service.UserService
             using var transaction = _userRepository.DatabaseTransaction();
             try
             {
-                var newUserRequest = new User
+                var user = await _userRepository.GetAsync(user => user.UserName == createUserRequest.UserName, null);
+                if (user == null)
                 {
-                    UserId = Guid.NewGuid(),
-                    UserName = createUserRequest.UserName,
-                    Password = createUserRequest.Password,
-                    IsAdmin = false,
-                    JoinedDate = DateTime.UtcNow,
-                    IsFirstTime = true,
-                    Gender = createUserRequest.Gender,
-                    Email = createUserRequest.Email,
-                    Status = Common.Enums.StatusEnum.Active,
-                };
+                    CreatePasswordHash(createUserRequest.Password, out byte[] passwordHash, out byte[] passwordSalt);
 
-                var newUser = await _userRepository.CreateAsync(newUserRequest);
-                _userRepository.SaveChanges();
+                    var newUserRequest = new User
+                    {
+                        UserId = Guid.NewGuid(),
+                        UserName = createUserRequest.UserName,
+                        PasswordHash = passwordHash,
+                        PasswordSalt = passwordSalt,
+                        IsAdmin = false,
+                        JoinedDate = DateTime.UtcNow,
+                        IsFirstTime = true,
+                        Gender = createUserRequest.Gender,
+                        Email = createUserRequest.Email,
+                        Status = Common.Enums.StatusEnum.Active,
+                    };
 
-                transaction.Commit();
+                    var newUser = await _userRepository.CreateAsync(newUserRequest);
+                    _userRepository.SaveChanges();
 
-                return new CreateUserResponse
-                {
-                    IsSucced = true,
-                };
+                    transaction.Commit();
+
+                    return new CreateUserResponse
+                    {
+                        IsSucced = true,
+                    };
+                }
+                return null;
             }
             catch (Exception)
             {
@@ -80,19 +89,48 @@ namespace Capstone.Service.UserService
                 Avatar = user.Avatar,
                 JoinedDate = user.JoinedDate,
                 Status = user.Status,
-                IsAdmin = user.IsAdmin, 
+                IsAdmin = user.IsAdmin,
                 UserName = user.UserName,
             };
         }
-
-        public async Task<User> LoginUser(string username, string password)
+        private void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
         {
-            return await _context.Users.FirstOrDefaultAsync(x => x.UserName == username && x.Password == password);
+            using (var hmac = new HMACSHA512())
+            {
+                passwordSalt = hmac.Key;
+                passwordHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+            }
+        }
+
+        private bool VerifyPasswordHash(string password, byte[] passwordHash, byte[] passwordSalt)
+        {
+            using (var hmac = new HMACSHA512(passwordSalt))
+            {
+                var computedHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+                return computedHash.SequenceEqual(passwordHash);
+            }
         }
 
         public Task<CreateUserResponse> UpdateUserAsync(UpdateUserRequest updateUserRequest, Guid id)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task<User> LoginUser(string username, string password)
+        {
+            var user = await _userRepository.GetAsync(x => x.UserName == username, null);
+            if (user != null)
+            {
+                if (!VerifyPasswordHash(password, user.PasswordHash, user.PasswordSalt))
+                {
+                    return null;
+                }
+                else 
+                { 
+                    return user; 
+                }
+            }
+            return null;
         }
     }
 }

@@ -32,3 +32,20 @@ D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.DataAccess\obj\Debug
 D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.DataAccess\obj\Debug\net6.0\Capstone.DataAccess.pdb
 D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.DataAccess\obj\Debug\net6.0\Capstone.DataAccess.genruntimeconfig.cache
 D:\FULearning\FALL2023\Capstone\BE_Capstone_FALL23\Capstone.DataAccess\obj\Debug\net6.0\ref\Capstone.DataAccess.dll
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.DataAccess\bin\Debug\net6.0\Capstone.DataAccess.deps.json
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.DataAccess\bin\Debug\net6.0\Capstone.DataAccess.runtimeconfig.json
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.DataAccess\bin\Debug\net6.0\Capstone.DataAccess.dll
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.DataAccess\bin\Debug\net6.0\Capstone.DataAccess.pdb
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.DataAccess\bin\Debug\net6.0\Capstone.Common.dll
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.DataAccess\bin\Debug\net6.0\Capstone.Common.pdb
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.DataAccess\obj\Debug\net6.0\Capstone.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.DataAccess\obj\Debug\net6.0\Capstone.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.DataAccess\obj\Debug\net6.0\Capstone.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.DataAccess\obj\Debug\net6.0\Capstone.DataAccess.AssemblyInfo.cs
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.DataAccess\obj\Debug\net6.0\Capstone.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.DataAccess\obj\Debug\net6.0\Capstone.DataAccess.csproj.CopyComplete
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.DataAccess\obj\Debug\net6.0\Capstone.DataAccess.dll
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.DataAccess\obj\Debug\net6.0\refint\Capstone.DataAccess.dll
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.DataAccess\obj\Debug\net6.0\Capstone.DataAccess.pdb
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.DataAccess\obj\Debug\net6.0\Capstone.DataAccess.genruntimeconfig.cache
+C:\Users\Cuong\OneDrive - codingclass.edu.vn\Desktop\BE_DevTasker\Capstone.DataAccess\obj\Debug\net6.0\ref\Capstone.DataAccess.dll

@@ -40,10 +40,13 @@ namespace Capstone.API.Controllers
         }
 
         [HttpPost("token")]
-        public async Task<LoginResponse> LoginInternal(LoginRequest request)
+        public async Task<ActionResult<LoginResponse>> LoginInternal(LoginRequest request)
         {
             var user = await _usersService.LoginUser(request.UserName, request.Password);
-           
+            if (user == null)
+            {
+                return NotFound();
+            }
             var claims = new Claim[]
             {
                 new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString()),
@@ -71,14 +74,8 @@ namespace Capstone.API.Controllers
                 UserId = user.UserId,
                 UserName = user.UserName,
                 Token = tokenString,
+                IsFirstTime = user.IsFirstTime
             };
-        }
-
-        [HttpGet("current-user")]
-        public IActionResult GetCurrentLoginUser()
-        {
-            var current = this.GetCurrentLoginUserId();
-            return Ok(current);
         }
     }
 }

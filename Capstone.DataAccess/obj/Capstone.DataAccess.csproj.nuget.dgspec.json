@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FULearning\\FALL2023\\Capstone\\BE_Capstone_FALL23\\Capstone.DataAccess\\Capstone.DataAccess.csproj": {}
+    "C:\\Users\\Cuong\\OneDrive - codingclass.edu.vn\\Desktop\\BE_DevTasker\\Capstone.DataAccess\\Capstone.DataAccess.csproj": {}
   },
   "projects": {
-    "D:\\FULearning\\FALL2023\\Capstone\\BE_Capstone_FALL23\\Capstone.Common\\Capstone.Common.csproj": {
+    "C:\\Users\\Cuong\\OneDrive - codingclass.edu.vn\\Desktop\\BE_DevTasker\\Capstone.Common\\Capstone.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FULearning\\FALL2023\\Capstone\\BE_Capstone_FALL23\\Capstone.Common\\Capstone.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Cuong\\OneDrive - codingclass.edu.vn\\Desktop\\BE_DevTasker\\Capstone.Common\\Capstone.Common.csproj",
         "projectName": "Capstone.Common",
-        "projectPath": "D:\\FULearning\\FALL2023\\Capstone\\BE_Capstone_FALL23\\Capstone.Common\\Capstone.Common.csproj",
-        "packagesPath": "C:\\Users\\phanl\\.nuget\\packages\\",
-        "outputPath": "D:\\FULearning\\FALL2023\\Capstone\\BE_Capstone_FALL23\\Capstone.Common\\obj\\",
+        "projectPath": "C:\\Users\\Cuong\\OneDrive - codingclass.edu.vn\\Desktop\\BE_DevTasker\\Capstone.Common\\Capstone.Common.csproj",
+        "packagesPath": "C:\\Users\\Cuong\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Cuong\\OneDrive - codingclass.edu.vn\\Desktop\\BE_DevTasker\\Capstone.Common\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\phanl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Cuong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -59,17 +63,21 @@
         }
       }
     },
-    "D:\\FULearning\\FALL2023\\Capstone\\BE_Capstone_FALL23\\Capstone.DataAccess\\Capstone.DataAccess.csproj": {
+    "C:\\Users\\Cuong\\OneDrive - codingclass.edu.vn\\Desktop\\BE_DevTasker\\Capstone.DataAccess\\Capstone.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FULearning\\FALL2023\\Capstone\\BE_Capstone_FALL23\\Capstone.DataAccess\\Capstone.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Cuong\\OneDrive - codingclass.edu.vn\\Desktop\\BE_DevTasker\\Capstone.DataAccess\\Capstone.DataAccess.csproj",
         "projectName": "Capstone.DataAccess",
-        "projectPath": "D:\\FULearning\\FALL2023\\Capstone\\BE_Capstone_FALL23\\Capstone.DataAccess\\Capstone.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\phanl\\.nuget\\packages\\",
-        "outputPath": "D:\\FULearning\\FALL2023\\Capstone\\BE_Capstone_FALL23\\Capstone.DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\Cuong\\OneDrive - codingclass.edu.vn\\Desktop\\BE_DevTasker\\Capstone.DataAccess\\Capstone.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Cuong\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Cuong\\OneDrive - codingclass.edu.vn\\Desktop\\BE_DevTasker\\Capstone.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\phanl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Cuong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -83,8 +91,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\FULearning\\FALL2023\\Capstone\\BE_Capstone_FALL23\\Capstone.Common\\Capstone.Common.csproj": {
-                "projectPath": "D:\\FULearning\\FALL2023\\Capstone\\BE_Capstone_FALL23\\Capstone.Common\\Capstone.Common.csproj"
+              "C:\\Users\\Cuong\\OneDrive - codingclass.edu.vn\\Desktop\\BE_DevTasker\\Capstone.Common\\Capstone.Common.csproj": {
+                "projectPath": "C:\\Users\\Cuong\\OneDrive - codingclass.edu.vn\\Desktop\\BE_DevTasker\\Capstone.Common\\Capstone.Common.csproj"
               }
             }
           }
